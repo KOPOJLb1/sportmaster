@@ -1,0 +1,409 @@
+@font-face { 
+    font-family: "Gilroy_bold";
+    src: url("../fonts/Gilroy-Bold/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face { 
+    font-family: "Gilroy_medium";
+    src: url("../fonts/Gilroy-Medium/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium/Gilroy-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+a{
+    color: #070707;
+    text-decoration: none;
+}
+p{  
+    padding-top: 45px;
+    text-align: center;
+    font-family: Gilroy_medium, Arial, sans-serif;
+    font-size: 18px;
+}
+h1{ 
+    text-align: center;
+    font-family: Gilroy_bold, Arial, sans-serif;
+    font-size: 40px;
+}
+section{
+    padding: 30px 0 30px 0;
+}
+/*Шапка*/
+header{
+    background-color: #ffffffaf;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+.blockMenu{
+    font-family: Gilroy_bold, Arial, sans-serif;
+    font-size: 18px;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+}
+.iconMenu{
+    display: none;
+}
+.lineMenu{
+    padding: 10px;
+}
+.lineMenu div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+li a{
+    text-decoration: none;
+    color: #828282;
+}
+/*Section Home*/
+#section-1{
+    padding: 50px;
+}
+.line{
+    margin-top: 10px;
+    border-top: 1px solid #828282;
+    border-radius: 10px; 
+    width: 100%;
+}
+.blockHome{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.smalllBlockName{
+    font-family: Gilroy_bold, Arial, sans-serif;
+    font-size: 45px;
+}
+.smalllBlockInfo{
+    font-family: Gilroy_medium, Arial, sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+.smalllBlockLn{
+    display: flex;
+    font-family: Gilroy_bold, Arial, sans-serif;
+    writing-mode: vertical-lr;
+    justify-content: center;
+}
+.smalllBlockLn a{
+    padding: 5px 0 5px 0;
+    transform: rotate(180deg);
+    transition: 1s;
+}
+.smalllBlockLn a:hover{
+    transform: scale(0.9);
+    color: #ff0000;
+}
+/*Слайдер*/
+.sim-slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+img {
+  width: 100%;
+}
+
+/* General styles */
+.sim-slider {
+  position: relative;
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+  left: 10px;
+  top: 50%;
+  display: block;
+  background: url("./arrow_left.png") no-repeat;
+}
+
+div.sim-slider-arrow-right {
+  right: 10px;
+  top: 50%;
+  display: block;
+  background: url("./arrow_right.png") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #BBB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*Секция Aboutme*/
+.sectionAboutme{
+    padding: 90px 0 90px 0;
+    background-color: #F6F6F6;
+}
+/*Секция Skills*/
+.sectionSkills{
+    padding-top: 45px;
+}
+.blockProgram{
+    padding-top: 25px;
+}
+.blockPrograms{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+.blockRating{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.blockRating img{
+    padding: 5px;
+}
+.imagePrograms{
+    width: 60%;
+    max-height: 120px;
+    
+    object-fit: cover;
+    text-align: center;
+}
+.sectionPortfolio{
+    padding: 90px 0 90px 0;
+    background-color: #F6F6F6;
+}
+.blockPortfolio{
+    padding-top: 30px;
+    text-align: center;
+}
+.blockPortfolio a{
+    font-family: Gilroy_medium, Arial, sans-serif;
+    text-decoration: underline;
+}
+.blockPortfolio img{
+    padding: 30px 0 30px;
+}
+.bandMessage{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #070707;
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: 1s;
+}
+.bandMessage :hover{
+    transform: scale(1.2);
+}
+.bandMessage p{
+    padding: 15px;
+    color: aliceblue;
+    transition: 1s;
+}
+.blockBandContacts{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.blocIconsMessage{
+    display: flex;
+    justify-content: center;
+}
+.blocIconsMessage img{
+    padding: 45px 20px 45px 20px;
+    width: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+.blocIconsMessage img:hover{
+    transform: scale(1.2);
+}
+.textSizePS{
+    padding-top: 10px;
+    color: #828282;
+}
+.textSizePS p{
+    padding: 0;
+    font-size: 14px;
+}
+.nav__li{
+    font-family: Gilroy_bold, Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.nav__li a {
+    font-family: Gilroy_bold, Arial, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav__li_active a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #011627;
+    transition: 0.24s;
+}
+.nav__li :hover{
+    transform: scale(0.9);
+    color: #ffbb00;
+}
+.sectionContacts{
+    padding-top: 30px;
+}
+.blockBandContacts{
+    padding-top: 45px;
+}
+
+@media screen and (max-width: 1024px){
+    li.nav__li{
+        font-family: Gilroy_bold, Arial, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: start;
+    }
+    li.nav__li a{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+.blockMenu{
+    display: none;
+}
+.line{
+    display: none;
+}
+.iconMenu{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.iconMenu a img{
+    padding: 10px;
+    width: 40px;
+}
+.blockMenu{
+    padding: 0;
+}
+.blockHome{
+    padding-top: 30px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.smalllBlockLn{
+    display: none;
+}
+#section-1{
+    padding: 10px;
+}
+.blocIconsMessage img{
+    width: 30px;
+}
+.blockPrograms{
+    display: flex;
+    justify-content: center;
+}
+.sectionAboutme .container{
+    padding: 0 10px 0 10px;
+}
+.sectionContacts{
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+}
+li.nav__li{
+    font-family: Gilroy_bold, Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: start;
+}
+li.nav__li a{
+    font-size: 25px;
+}
+header{
+    background-color: transparent;
+}
+}
